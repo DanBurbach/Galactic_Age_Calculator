@@ -39,7 +39,7 @@ describe('Planet age', function() {
   });
 
   it('should return a persons age if they were on Pluto', function (){
-    expect(earthYear.planetPluto()).toEqual(0.149);
+    expect(earthYear.planetPluto()).toEqual(0.15);
   });
-  
+
 });

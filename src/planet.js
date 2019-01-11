@@ -45,7 +45,7 @@ class PlanetCalc {
   }
 
   planetPluto() {
-    let age = (this.year / 164.8);
+    let age = (this.year / 248.11);
     return parseFloat(age.toFixed(2));
   }
 }
