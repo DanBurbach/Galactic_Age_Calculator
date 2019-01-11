@@ -1,56 +1,57 @@
 import { PlanetCalc } from './../src/planet.js';
 import { Age } from './../src/age.js'
 
+
+// Planetary Age ---------------------------------
+
 describe('Planet age', function() {
-  let earthYear;
-  beforeEach(function(){
-    earthYear = new PlanetCalc(37);
+  let astronaut;
+  beforeEach(function() {
+    astronaut = new PlanetCalc('Neil Armstrong', 37, 85, 80 );
   });
 
+  it('should return a users name when entered', function (){
+    expect(astronaut.yourName()).toEqual('Neil Armstrong');
+  })
+
   it('should capture a persons age based off of how old they are on Earth', function (){
-    expect(earthYear.planetEarth()).toEqual(37);
+    expect(astronaut.planetEarth()).toEqual(37);
   });
 
   it('should return a persons age if they were on Mercury', function (){
-    expect(earthYear.planetMercury()).toEqual(154.17);
+    expect(astronaut.planetMercury()).toEqual(154.17);
   });
 
   it('should return a persons age if they were on Venus', function (){
-    expect(earthYear.planetVenus()).toEqual(60.06);
+    expect(astronaut.planetVenus()).toEqual(60.06);
   });
 
   it('should return a persons age if they were on Mars', function (){
-    expect(earthYear.planetMars()).toEqual(19.68);
+    expect(astronaut.planetMars()).toEqual(19.68);
   });
 
   it('should return a persons age if they were on Jupiter', function (){
-    expect(earthYear.planetJupiter()).toEqual(3.12);
+    expect(astronaut.planetJupiter()).toEqual(3.12);
   });
 
   it('should return a persons age if they were on Saturn', function (){
-    expect(earthYear.planetSaturn()).toEqual(1.26);
+    expect(astronaut.planetSaturn()).toEqual(1.26);
   });
 
   it('should return a persons age if they were on Uranus', function (){
-    expect(earthYear.planetUranus()).toEqual(0.44);
+    expect(astronaut.planetUranus()).toEqual(0.44);
   });
 
   it('should return a persons age if they were on Neptune', function (){
-    expect(earthYear.planetNeptune()).toEqual(0.22);
+    expect(astronaut.planetNeptune()).toEqual(0.22);
   });
 
   it('should return a persons age if they were on Pluto', function (){
-    expect(earthYear.planetPluto()).toEqual(0.15);
+    expect(astronaut.planetPluto()).toEqual(0.15);
   });
-});
 
-describe('Life expectancy', function(){
-  let estimatedlife;
-  beforeEach(function(){
-    estimatedlife = new PlanetCalc(80);
-  });
-  it('should return an estimated life expectancy given by the user', function(){
-    expect(earthYear.lifeExpectancy()).toEqual(80);
+  it('should return an estimated life expectancy given by the user', function() {
+    expect(astronaut.lifeExpectancy()).toEqual(85);
   });
 });
 

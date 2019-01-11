@@ -1,9 +1,7 @@
 class Age {
 
-  constructor(month, day, year) {
-    this.month = month;
-    this.day = day;
-    this.year = year;
+  constructor(birthday) {
+    this.birthday = birthday;
   }
 
   getAge(birthday) {
@@ -17,5 +15,37 @@ class Age {
     let age = today.getFullYear() - birthday.getFullYear() - thisYear;
     return age;
   }
+
+  // lifeEstimate() {
+  //   let age = this.age;
+  //   let sex = this.sex;
+  //   let ethnicity = this.ethnicity;
+  //   let home = this.home;
+  //   let eduction = this.education;
+  //   let smoking = this.smoking;
+  //
+  //   let expectancy;
+  //
+  //   if (0 =< age =< 20) {
+  //
+  //   }
+  //
+  //   else if (21 =< age =< 45){
+  //
+  //   }
+  //
+  //   else if (46 =< age =< 65){
+  //
+  //   }
+  //
+  //   else if (66 =< age =< 85) {
+  //
+  //   }
+  //
+  //   else if (age >= 86) {
+  //
+  //   }
+  // }
+
 }
 export { Age };

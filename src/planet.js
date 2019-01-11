@@ -1,13 +1,15 @@
 class PlanetCalc {
 
-  constructor(age, estimated, sex, ethnicity, home, education, smoking) {
+  constructor(name, age, estimated, actual) {
+    this.name = name;
     this.age = age;
     this.estimated = estimated;
-    this.sex = sex;
-    this.ethnicity = ethnicity;
-    this.home = home;
-    this.education = education;
-    this.smoking = smoking;
+    this.actual = actual;
+  }
+
+  yourName() {
+    let name = this.name;
+    return name;
   }
 
   planetEarth() {
@@ -55,45 +57,12 @@ class PlanetCalc {
     return parseFloat(age.toFixed(2));
   }
 
-
-  // lifeEstimate() {
-  //   let age = this.age;
-  //   let sex = this.sex;
-  //   let ethnicity = this.ethnicity;
-  //   let home = this.home;
-  //   let eduction = this.education;
-  //   let smoking = this.smoking;
-  //
-  //   let expectancy;
-  //
-  //   if (0 =< age =< 20) {
-  //
-  //   }
-  //
-  //   else if (21 =< age =< 45){
-  //
-  //   }
-  //
-  //   else if (46 =< age =< 65){
-  //
-  //   }
-  //
-  //   else if (66 =< age =< 85) {
-  //
-  //   }
-  //
-  //   else if (age >= 86) {
-  //
-  //   }
-  // }
-
   lifeExpectancy() {
-    let estimatedlife = this.estimated;
-    return parseFloat(estimatedlife.toFixed(2));
+    return this.estimated;
   }
 
   remainingAge() {
-    this.lifeExpectancy()
+    return (this.lifeExpectancy() - this.age);
   }
 }
 
