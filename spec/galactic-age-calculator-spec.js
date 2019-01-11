@@ -28,7 +28,7 @@ describe('Planet age', function() {
   });
 
   it('should return an answer telling the user if they have surpassed the average given life expectancy', function () {
-    expect(astronaut.overtheHill()).toEqual(1);
+    expect(astronaut.overtheHill()).toEqual('You still have an estimated 43 years to go. Get out and enjoy them!');
   });
 
   // Planetary Age ---------------------------------
