@@ -66,7 +66,17 @@ class PlanetCalc {
   }
 
   remainingAge() {
-    return (this.lifeExpectancy() - this.age);
+    return (this.lifeActual() - this.age);
+  }
+
+  overtheHill() {
+    if (this.age > this.lifeActual()) {
+      return "You are " + Math.abs(this.remainingAge()) + " years past your guess!";
+    } else if (this.age == this.lifeActual()) {
+      return "You are living right at your guess!";
+    } else if (this.age < this.lifeActual()) {
+      return "You still have an estimated " + Math.abs(this.remainingAge()) + " years to go. Get out and enjoy them!";
+    }
   }
 }
 
