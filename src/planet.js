@@ -1,8 +1,8 @@
 class PlanetCalc {
 
-  constructor(name, age, estimated, actual) {
+  constructor(name, birthday, estimated, actual) {
     this.name = name;
-    this.age = age;
+    this.birthday = birthday;
     this.estimated = estimated;
     this.actual = actual;
   }
@@ -13,47 +13,49 @@ class PlanetCalc {
   }
 
   planetEarth() {
-    let age = this.age;
-    return age;
+    let age;
+    let dateToday = new Date();
+    let entityDate = new Date(this.birthday);
+    return age = parseInt((dateToday - entityDate)/86400000/365.26);
   }
 
   planetMercury() {
-    let age = (this.age / 0.24);
+    let age = (this.planetEarth() / 0.24);
     return parseFloat(age.toFixed(2));
   }
 
   planetVenus() {
-    let age = (this.age / 0.616);
+    let age = (this.planetEarth() / 0.616);
     return parseFloat(age.toFixed(2));
   }
 
   planetMars() {
-    let age = (this.age / 1.88);
+    let age = (this.planetEarth() / 1.88);
     return parseFloat(age.toFixed(2));
   }
 
   planetJupiter() {
-    let age = (this.age / 11.86);
+    let age = (this.planetEarth() / 11.86);
     return parseFloat(age.toFixed(2));
   }
 
   planetSaturn() {
-    let age = (this.age / 29.457);
+    let age = (this.planetEarth() / 29.457);
     return parseFloat(age.toFixed(2));
   }
 
   planetUranus() {
-    let age = (this.age / 84.078);
+    let age = (this.planetEarth() / 84.078);
     return parseFloat(age.toFixed(2));
   }
 
   planetNeptune() {
-    let age = (this.age / 164.8);
+    let age = (this.planetEarth() / 164.8);
     return parseFloat(age.toFixed(2));
   }
 
   planetPluto() {
-    let age = (this.age / 248.11);
+    let age = (this.planetEarth() / 248.11);
     return parseFloat(age.toFixed(2));
   }
 
@@ -66,15 +68,15 @@ class PlanetCalc {
   }
 
   remainingAge() {
-    return Math.abs(this.lifeActual() - this.age);
+    return Math.abs(this.lifeActual() - this.planetEarth());
   }
 
   overtheHill() {
-    if (this.age > this.lifeActual()) {
+    if (this.planetEarth() > this.lifeActual()) {
       return "You are " + Math.abs(this.remainingAge()) + " years past your guess!";
-    } else if (this.age == this.lifeActual()) {
+    } else if (this.planetEarth() == this.lifeActual()) {
       return "You are living right at your guess!";
-    } else if (this.age < this.lifeActual()) {
+    } else if (this.planetEarth() < this.lifeActual()) {
       return "You still have an estimated " + Math.abs(this.remainingAge()) + " years to go. Get out and enjoy them!";
     }
   }
