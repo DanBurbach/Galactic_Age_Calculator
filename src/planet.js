@@ -15,7 +15,8 @@ class PlanetCalc {
   }
 
   planetVenus() {
-
+    let age = (this.year / 0.24);
+    return parseFloat(age.toFixed(2));
   }
 
   planetMars() {
