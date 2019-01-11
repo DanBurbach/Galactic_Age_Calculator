@@ -1,5 +1,5 @@
 import { PlanetCalc } from './../src/planet.js';
-import { Age } from './../src/age.js'
+// import { Age } from './../src/age.js'
 
 describe('User age', function() {
   let astronaut;
@@ -13,7 +13,7 @@ describe('User age', function() {
     expect(astronaut.yourName()).toEqual('Dan Burbach');
   })
 
-  it('should capture a persons age based off of how old they are on Earth', function() {
+  it('should capture a persons age based off of their birthday on Earth', function() {
     expect(astronaut.planetEarth()).toEqual(36);
   });
 
@@ -39,7 +39,7 @@ describe('Keith Richards age test', function() {
     astronaut = new PlanetCalc('Keith Richards', '12/18/1943', 60, 70);
   });
 
-  it('should return the number of years they have lived past in a life expectancy if they have', function() {
+  it('should return the number of years they have lived past their life expectancy if they have', function() {
     expect(astronaut.remainingAge()).toEqual(5);
   });
 
