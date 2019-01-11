@@ -35,14 +35,14 @@ describe('User age', function() {
 
 // Keith Richards age test ----------------------------
 
-describe('Planet age', function() {
+describe('Keith Richards age test', function() {
   let astronaut;
   beforeEach(function() {
     astronaut = new PlanetCalc('Keith Richards', 75, 60, 70 );
   });
 
   it('should return the number of years they have lived past in a life expectancy if they have', function() {
-    expect(astronaut.remainingAge()).toEqual(1);
+    expect(astronaut.remainingAge()).toEqual(5);
   });
 
 });
