@@ -10,10 +10,10 @@ describe('Planet age', function() {
     expect(earthYear.planetEarth()).toEqual(37);
   });
 
-  // it('should return a persons age if they were on Mercury', function (){
-  //   expect(earthYear.planetMercury()).toEqual(154.17);
-  // });
-  //
+  it('should return a persons age if they were on Mercury', function (){
+    expect(earthYear.planetMercury()).toEqual(154.17);
+  });
+
   // it('should return a persons age if they were on Venus', function (){
   //   expect(earthYear.planetVenus()).toEqual(60.06);
   // });
