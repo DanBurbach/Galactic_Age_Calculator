@@ -1,4 +1,5 @@
 import { PlanetCalc } from './../src/planet.js';
+import { Age } from './../src/age.js'
 
 describe('Planet age', function() {
   let earthYear;
@@ -41,5 +42,27 @@ describe('Planet age', function() {
   it('should return a persons age if they were on Pluto', function (){
     expect(earthYear.planetPluto()).toEqual(0.15);
   });
-
 });
+
+describe('Life expectancy', function(){
+  let estimatedlife;
+  beforeEach(function(){
+    estimatedlife = new PlanetCalc(80);
+  });
+  it('should return an estimated life expectancy given by the user', function(){
+    expect(earthYear.lifeExpectancy()).toEqual(80);
+  });
+});
+
+
+// describe('User age', function(){
+//   let enteredAge;
+//   beforeEach(function(){
+//     enteredAge = new Age(11, 4, 1982);
+//   });
+//
+//   it('should capture a given birthday and return an age of the user', function(){
+//     expect(enteredAge.userAge()).toEqual(36);
+//   });
+//
+// });
