@@ -25,7 +25,7 @@ class PlanetCalc {
   }
 
   planetJupiter() {
-    let age = (this.year / 1.88);
+    let age = (this.year / 11.86);
     return parseFloat(age.toFixed(2));
   }
 
