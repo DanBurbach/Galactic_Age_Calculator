@@ -27,7 +27,7 @@ describe('Planet age', function() {
   });
 
   it('should return a persons age if they were on Saturn', function (){
-    expect(earthYear.planetSaturn()).toEqual(1.256);
+    expect(earthYear.planetSaturn()).toEqual(1.26);
   });
 
   // it('should return a persons age if they were on Uranus', function (){
