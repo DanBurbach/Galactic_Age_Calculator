@@ -55,7 +55,7 @@ describe('Planet age', function() {
   });
 
   it('should return a given life expectancy given by the program', function(){
-    expect(astronaut.lifeActual()).toEqual(12);
+    expect(astronaut.lifeActual()).toEqual(80);
   })
 
 });
