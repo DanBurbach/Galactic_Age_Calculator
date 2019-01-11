@@ -66,7 +66,7 @@ class PlanetCalc {
   }
 
   remainingAge() {
-    return (this.lifeActual() - this.age);
+    return Math.abs(this.lifeActual() - this.age);
   }
 
   overtheHill() {
