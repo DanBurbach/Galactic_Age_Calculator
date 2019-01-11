@@ -13,28 +13,28 @@ This program takes a numeric input of the age of a user. This returns the age th
 - [] ** Expect: ** planetEarth(37) === "37";
 
 #### Spec: for Earth age 37 on Mercury;
-- [] ** Expect: ** planetMercury;
+- [] ** Expect: ** planetMercury(37) === "154.17";
 
 #### Spec: for Earth age 37 on Venus;
-- [] ** Expect: ** planetVenus;
+- [] ** Expect: ** planetVenus(37) === "60.06";
 
 #### Spec: for Earth age 37 on Mars;
-- [] ** Expect: ** planetMars;
+- [] ** Expect: ** planetMars(37) === "19.68";
 
 #### Spec: for Earth age 37 on Jupiter;
-- [] ** Expect: ** planetJupiter;
+- [] ** Expect: ** planetJupiter(37) === "3.12";
 
 #### Spec: for Earth age 37 on Saturn;
-- [] ** Expect: ** planetSaturn;
+- [] ** Expect: ** planetSaturn(37) === "1.26";
 
 #### Spec: for Earth age 37 on Uranus;
-- [] ** Expect: ** planetUranus;
+- [] ** Expect: ** planetUranus(37) === "0.44";
 
 #### Spec: for Earth age 37 on Neptune;
-- [] ** Expect: ** planetNeptune;
+- [] ** Expect: ** planetNeptune(37) === "0.22";
 
 #### Spec: for Earth age 37 on Pluto;
-- [] ** Expect: ** planetPluto;
+- [] ** Expect: ** planetPluto(37) === "0.15";
 
 
 
