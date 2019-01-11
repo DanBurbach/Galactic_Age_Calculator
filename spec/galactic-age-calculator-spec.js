@@ -53,17 +53,22 @@ describe('Planet age', function() {
   it('should return an estimated life expectancy given by the user', function() {
     expect(astronaut.lifeExpectancy()).toEqual(85);
   });
+
+  it('should return a given life expectancy given by the program', function(){
+    expect(astronaut.lifeActual()).toEqual(12);
+  })
+
 });
 
 
 // describe('User age', function(){
 //   let enteredAge;
 //   beforeEach(function(){
-//     enteredAge = new Age(11, 4, 1982);
+//     enteredAge = new Age('4/11/1982');
 //   });
 //
 //   it('should capture a given birthday and return an age of the user', function(){
-//     expect(enteredAge.userAge()).toEqual(36);
+//     expect(enteredAge.getAge()).toEqual(36);
 //   });
 //
 // });

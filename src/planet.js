@@ -61,6 +61,10 @@ class PlanetCalc {
     return this.estimated;
   }
 
+  lifeActual() {
+    return this.actual;
+  }
+
   remainingAge() {
     return (this.lifeExpectancy() - this.age);
   }
