@@ -1,0 +1,21 @@
+body {
+  background-color: black !important;
+}
+
+#results {
+  display: none;
+}
+
+.jumbotron1 {
+  background-image: url("https://media.giphy.com/media/xUA7b7nNgbuprWGNkQ/giphy.gif");
+  background-size: cover;
+  background-position: center;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px grey;
+  min-height: 400px;
+  min-width: 300px;
+  border-color: silver;
+  border-style: solid;
+  border-width: thick;
+}

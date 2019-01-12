@@ -1,13 +1,13 @@
 import { PlanetCalc } from './../src/planet.js';
 // import { Age } from './../src/age.js'
 
+// User Age ------------------------------------
+
 describe('User age', function() {
   let astronaut;
   beforeEach(function() {
     astronaut = new PlanetCalc('Dan Burbach', '04/06/1982', 85, 80 );
   });
-
-// User Age ------------------------------------
 
   it('should return a users name when entered', function() {
     expect(astronaut.yourName()).toEqual('Dan Burbach');

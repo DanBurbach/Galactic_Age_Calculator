@@ -54,7 +54,15 @@ This program takes a numeric input of the age of a user. This returns the age th
 
 
 ## Setup/Installation Requirements
-git clone: https://github.com/DanBurbach/Word_Definer_Test.git
+1. git clone: https://github.com/DanBurbach/Word_Definer_Test.git
+
+2. Navigate into this repo and download dependencies using manager of your choice: npm install
+
+3. Run specs using npm run test
+ - a new browser will open with localhost:9876
+
+4. launch dev environment in browser using npm run start
+ - a new browser will open with localhost:8080
 
 ## Known Bugs
 
@@ -62,7 +70,27 @@ git clone: https://github.com/DanBurbach/Word_Definer_Test.git
 Feel free to contact me with any suggestions or questions.
 
 ## Technologies Used
-HTML, CSS, & Javascript.
+HTML, CSS, Javascript, and webpack
+
+## Objectives
+
+- Specs were committed before any code.
+
+- Business logic is thoroughly tested with Jasmine.
+
+- Karma is set up correctly.
+
+- Project utilizes ES6 features including classes, let and const.
+
+- Dependencies are managed with npm.
+
+- Application uses webpack to lint, bundle, and process code.
+
+- Project is in a polished, portfolio-quality state. (Clear code presentation, error free, complete README, commit history, etc.)
+
+- Required functionality was in place by the Friday deadline.
+
+- Project demonstrates understanding of week's concepts. If prompted, you are able to discuss your code with an instructor using correct terminology.
 
 ### License
 Licensed under the MIT license.
