@@ -1,5 +1,6 @@
 body {
-  background-color: black !important;
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/15/21/37/texture-990104_1280.jpg");
+  background-size:cover;
 }
 
 #results {
@@ -10,7 +11,7 @@ body {
   background-image: url("https://media.giphy.com/media/xUA7b7nNgbuprWGNkQ/giphy.gif");
   background-size: cover;
   background-position: center;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   text-shadow: 2px 2px grey;
   min-height: 400px;
