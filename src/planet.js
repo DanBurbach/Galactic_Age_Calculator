@@ -15,8 +15,8 @@ class PlanetCalc {
   planetEarth() {
     let age;
     let dateToday = new Date();
-    let entityDate = new Date(this.birthday);
-    return age = parseInt((dateToday - entityDate)/86400000/365.26);
+    let entryDate = new Date(this.birthday);
+    return age = parseInt((dateToday - entryDate)/(1000*60*60*24)/365.26);
   }
 
   planetMercury() {
@@ -57,6 +57,38 @@ class PlanetCalc {
   planetPluto() {
     let age = (this.planetEarth() / 248.11);
     return parseFloat(age.toFixed(2));
+  }
+
+  actualMercury() {
+    return Math.abs(this.lifeActual() - this.planetMercury());
+  }
+
+  actualVenus() {
+    return Math.abs(this.lifeActual() - this.planetVenu());
+  }
+
+  actualMars() {
+    return Math.abs(this.lifeActual() - this.planetMars());
+  }
+
+  actualJupiter() {
+    return Math.abs(this.lifeActual() - this.planetJupiter());
+  }
+
+  actualSaturn() {
+    return Math.abs(this.lifeActual() - this.planetSaturn());
+  }
+
+  actualUranus() {
+    return Math.abs(this.lifeActual() - this.planetUranus());
+  }
+
+  actualNeptune() {
+    return Math.abs(this.lifeActual() - this.planetNeptune());
+  }
+
+  actualPluto() {
+    return Math.abs(this.lifeActual() - this.planetPluto());
   }
 
   lifeExpectancy() {

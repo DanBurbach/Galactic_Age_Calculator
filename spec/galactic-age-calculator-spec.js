@@ -85,17 +85,8 @@ describe('Planet age', function() {
     expect(astronaut.planetPluto()).toEqual(0.15);
   });
 
+  it('should return how many planet years a person has left on Mercury', function(){
+    expect(astronaut.actualMercury()).toEqual(1);
+  });
+
 });
-
-
-// describe('User age', function(){
-//   let enteredAge;
-//   beforeEach(function(){
-//     enteredAge = new Age('4/11/1982');
-//   });
-//
-//   it('should capture a given birthday and return an age of the user', function(){
-//     expect(enteredAge.getAge()).toEqual(36);
-//   });
-//
-// });
