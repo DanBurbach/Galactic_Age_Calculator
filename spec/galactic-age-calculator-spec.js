@@ -92,7 +92,7 @@ describe('Planet age', function() {
   });
 
   it('should return how many planet years a person has left on Venus', function(){
-    expect(astronaut.actualVenus()).toEqual(70);
+    expect(astronaut.actualVenus()).toEqual(21.56);
   });
 
 });

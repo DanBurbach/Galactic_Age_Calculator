@@ -60,35 +60,43 @@ class PlanetCalc {
   }
 
   actualMercury() {
-    return Math.abs(this.lifeActual() - this.planetMercury());
+    let age = Math.abs(this.lifeActual() - this.planetMercury());
+    return parseFloat(age.toFixed(2));
   }
 
   actualVenus() {
-    return Math.abs(this.lifeActual() - this.planetVenus());
+    let age = Math.abs(this.lifeActual() - this.planetVenus());
+    return parseFloat(age.toFixed(2));
   }
 
   actualMars() {
-    return Math.abs(this.lifeActual() - this.planetMars());
+    let age = Math.abs(this.lifeActual() - this.planetMars());
+    return parseFloat(age.toFixed(2));
   }
 
   actualJupiter() {
-    return Math.abs(this.lifeActual() - this.planetJupiter());
+    let age = Math.abs(this.lifeActual() - this.planetJupiter());
+    return parseFloat(age.toFixed(2));
   }
 
   actualSaturn() {
-    return Math.abs(this.lifeActual() - this.planetSaturn());
+    let age = Math.abs(this.lifeActual() - this.planetSaturn());
+    return parseFloat(age.toFixed(2));
   }
 
   actualUranus() {
-    return Math.abs(this.lifeActual() - this.planetUranus());
+    let age = Math.abs(this.lifeActual() - this.planetUranus());
+    return parseFloat(age.toFixed(2));
   }
 
   actualNeptune() {
-    return Math.abs(this.lifeActual() - this.planetNeptune());
+    let age = Math.abs(this.lifeActual() - this.planetNeptune());
+    return parseFloat(age.toFixed(2));
   }
 
   actualPluto() {
-    return Math.abs(this.lifeActual() - this.planetPluto());
+    let age = Math.abs(this.lifeActual() - this.planetPluto());
+    return parseFloat(age.toFixed(2));
   }
 
   lifeExpectancy() {
