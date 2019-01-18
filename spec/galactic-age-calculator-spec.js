@@ -86,7 +86,7 @@ describe('Planet age', function() {
   });
 
   it('should return how many planet years a person has left on Mercury', function(){
-    expect(astronaut.actualMercury()).toEqual(1);
+    expect(astronaut.actualMercury()).toEqual(70);
   });
 
 });
