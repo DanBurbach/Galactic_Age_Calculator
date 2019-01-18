@@ -85,8 +85,14 @@ describe('Planet age', function() {
     expect(astronaut.planetPluto()).toEqual(0.15);
   });
 
+// Remaining Years left for a user in planet years ----------------------------
+
   it('should return how many planet years a person has left on Mercury', function(){
     expect(astronaut.actualMercury()).toEqual(70);
+  });
+
+  it('should return how many planet years a person has left on Venus', function(){
+    expect(astronaut.actualVenus()).toEqual(70);
   });
 
 });

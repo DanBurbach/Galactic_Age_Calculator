@@ -64,7 +64,7 @@ class PlanetCalc {
   }
 
   actualVenus() {
-    return Math.abs(this.lifeActual() - this.planetVenu());
+    return Math.abs(this.lifeActual() - this.planetVenus());
   }
 
   actualMars() {
