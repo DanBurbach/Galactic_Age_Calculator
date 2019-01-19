@@ -9,6 +9,7 @@
 This program takes a numeric input of the age of a user. This returns the age they are on each planet in our solar system. Given the users entered demograph, it will also return the number of years left to "live" that they might have. If they have exceeded this estimated time left, it will return how far beyond this that they have lived.
 
 ### Specifications:
+
 #### Spec: return users name when entered;
 - [x] ** Expect: ** yourName('Dan Burbach') === "Dan Burbach";
 
@@ -27,31 +28,53 @@ This program takes a numeric input of the age of a user. This returns the age th
 #### Spec: return the number of years they have lived their life expectancy if they have ;
 - [x] ** Expect: ** remainingAge(75) === "5";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Mercury;
+#### Spec: for Earth age 36 (April 6, 1982) on Mercury;
 - [x] ** Expect: ** planetMercury(37) === "150";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Venus;
-- [x] ** Expect: ** planetVenus(37) === "58.44";
+#### Spec: for Earth age 36 (April 6, 1982) on Venus;
+- [x] ** Expect: ** planetVenus(36) === "58.44";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Mars;
-- [x] ** Expect: ** planetMars(37) === "19.15";
+#### Spec: for Earth age 36 (April 6, 1982) on Mars;
+- [x] ** Expect: ** planetMars(36) === "19.15";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Jupiter;
-- [x] ** Expect: ** planetJupiter(37) === "3.04";
+#### Spec: for Earth age 36 (April 6, 1982) on Jupiter;
+- [x] ** Expect: ** planetJupiter(36) === "3.04";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Saturn;
-- [x] ** Expect: ** planetSaturn(37) === "1.22";
+#### Spec: for Earth age 36 (April 6, 1982) on Saturn;
+- [x] ** Expect: ** planetSaturn(36) === "1.22";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Uranus;
-- [x] ** Expect: ** planetUranus(37) === "0.43";
+#### Spec: for Earth age 36 (April 6, 1982) on Uranus;
+- [x] ** Expect: ** planetUranus(36) === "0.43";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Neptune;
-- [x] ** Expect: ** planetNeptune(37) === "0.22";
+#### Spec: for Earth age 36 (April 6, 1982) on Neptune;
+- [x] ** Expect: ** planetNeptune(36) === "0.22";
 
-#### Spec: for Earth age 37 (April 6, 1982) on Pluto;
-- [x] ** Expect: ** planetPluto(37) === "0.15";
+#### Spec: for Earth age 36 (April 6, 1982) on Pluto;
+- [x] ** Expect: ** planetPluto(36) === "0.15";
 
+#### Spec: for Earth age 36 (April 6, 1982) on Mercury, return the number of years remaining in Mercury Years;
+- [x] ** Expect: ** actualMercury(36) === "33.33";
 
+#### Spec: for Earth age 36 (April 6, 1982) on Venus, return the number of years remaining in Venus Years;
+- [x] ** Expect: ** actualVenus(36) === "12.99";
+
+#### Spec: for Earth age 36 (April 6, 1982) on Mars, return the number of years remaining in Mars Years;
+- [x] ** Expect: ** actualMars(36) === "4.25";
+
+#### Spec: for Earth age 36 (April 6, 1982) on Jupiter, return the number of years remaining in Jupiter Years;
+- [x] ** Expect: ** actualJupiter(36) === "0.67";
+
+#### Spec: for Earth age 36 (April 6, 1982) on Saturn, return the number of years remaining in Saturn Years;
+- [x] ** Expect: ** actualSaturn(36) === "0.27";
+
+#### Spec: for Earth age 36 (April 6, 1982) on Uranus, return the number of years remaining in Uranus Years;
+- [x] ** Expect: ** actualUranus(36) === "0.09";
+
+#### Spec: for Earth age 36 (April 6, 1982) on Neptune, return the number of years remaining in Neptune Years;
+- [x] ** Expect: ** actualNeptune(36) === "0.05";
+
+#### Spec: for Earth age 36 (April 6, 1982) on Pluto, return the number of years remaining in Pluto Years;
+- [x] ** Expect: ** actualPluto(36) === "0.03";
 
 ## Setup/Installation Requirements
 1. git clone: https://github.com/DanBurbach/Word_Definer_Test.git
