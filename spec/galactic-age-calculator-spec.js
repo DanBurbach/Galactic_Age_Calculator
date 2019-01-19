@@ -112,11 +112,12 @@ describe('Planet age', function() {
   });
 
   it('should return how many planet years a person has left on Neptune', function(){
-    expect(astronaut.actualNeptune()).toEqual(1);
+    expect(astronaut.actualNeptune()).toEqual(0.05
+    );
   });
 
   it('should return how many planet years a person has left on Pluto', function(){
-    expect(astronaut.actualPluto()).toEqual(1);
+    expect(astronaut.actualPluto()).toEqual(0.03);
   });
 
 });
