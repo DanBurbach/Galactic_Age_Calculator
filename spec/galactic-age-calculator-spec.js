@@ -108,7 +108,7 @@ describe('Planet age', function() {
   });
 
   it('should return how many planet years a person has left on Uranus', function(){
-    expect(astronaut.actualUranus()).toEqual(1);
+    expect(astronaut.actualUranus()).toEqual(0.09);
   });
 
   it('should return how many planet years a person has left on Neptune', function(){
