@@ -19,6 +19,21 @@ class PlanetCalc {
     return age = parseInt((dateToday - entryDate)/(1000*60*60*24)/365.26);
   }
 
+  // estimated age left
+  lifeExpectancy() {
+    return this.estimated;
+  }
+
+  // actual amount of years remaining
+  lifeActual() {
+    return this.actual;
+  }
+
+  // remaining age of the user
+  remainingAge() {
+    return Math.abs(this.lifeActual() - this.planetEarth());
+  }
+
   planetMercury() {
     let age = (this.planetEarth() / 0.24);
     return parseFloat(age.toFixed(2));
@@ -59,61 +74,46 @@ class PlanetCalc {
     return parseFloat(age.toFixed(2));
   }
 
-// checking age of person in planet years to how many years remaining. return planet years
+  // checking age of person in planet years to how many years remaining. return planet years
 
   actualMercury() {
-    let age = (remainingAge() / 0.24);
+    let age = (this.remainingAge() / 0.24) - this.planetMercury();
     return parseFloat(age.toFixed(2));
   }
 
   actualVenus() {
-    let age = (remainingAge() / 0.616);
+    let age = (this.remainingAge() / 0.616) - this.planetVenus();
     return parseFloat(age.toFixed(2));
   }
 
   actualMars() {
-    let age = (remainingAge() / 1.88);
+    let age = (this.remainingAge() / 1.88) - this.planetMars();
     return parseFloat(age.toFixed(2));
   }
 
   actualJupiter() {
-    let age = (remainingAge() / 11.86);
+    let age = (this.remainingAge() / 11.86) - this.planetJupiter();
     return parseFloat(age.toFixed(2));
   }
 
   actualSaturn() {
-    let age = (remainingAge() / 29.457);
+    let age = (this.remainingAge() / 29.457) - this.planetSaturn();
     return parseFloat(age.toFixed(2));
   }
 
   actualUranus() {
-    let age = (remainingAge() / 84.078);
+    let age = (this.remainingAge() / 84.078) - this.planetUranus();
     return parseFloat(age.toFixed(2));
   }
 
   actualNeptune() {
-    let age = (remainingAge() / 164.8);
+    let age = (this.remainingAge() / 164.8) - this.planetNeptune();
     return parseFloat(age.toFixed(2));
   }
 
   actualPluto() {
-    let age = (remainingAge() / 248.11);
+    let age = (this.remainingAge() / 248.11) - this.planetPluto();
     return parseFloat(age.toFixed(2));
-  }
-
-// estimated age left
-  lifeExpectancy() {
-    return this.estimated;
-  }
-
-// actual amount of years remaining
-  lifeActual() {
-    return this.actual;
-  }
-
-// remaining age of the user
-  remainingAge() {
-    return Math.abs(this.lifeActual() - this.planetEarth());
   }
 
   overtheHill() {
