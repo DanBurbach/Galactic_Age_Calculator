@@ -96,7 +96,7 @@ describe('Planet age', function() {
   });
 
   it('should return how many planet years a person has left on Mars', function(){
-    expect(astronaut.actualMars()).toEqual(1);
+    expect(astronaut.actualMars()).toEqual(4.25);
   });
 
   it('should return how many planet years a person has left on Jupiter', function(){
