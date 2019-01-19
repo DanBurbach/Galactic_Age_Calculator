@@ -62,42 +62,42 @@ class PlanetCalc {
 // checking age of person in planet years to how many years remaining. return planet years
 
   actualMercury() {
-    let age = ((this.actual / 0.24) - this.planetMercury());
+    let age = (remainingAge() / 0.24);
     return parseFloat(age.toFixed(2));
   }
 
   actualVenus() {
-    let age = ((this.actual / 0.616) - this.planetVenus());
+    let age = (remainingAge() / 0.616);
     return parseFloat(age.toFixed(2));
   }
 
   actualMars() {
-    let age = ((this.actual/1.88) - this.planetMars());
+    let age = (remainingAge() / 1.88);
     return parseFloat(age.toFixed(2));
   }
 
   actualJupiter() {
-    let age = ((this.actual/11.86) - this.planetJupiter());
+    let age = (remainingAge() / 11.86);
     return parseFloat(age.toFixed(2));
   }
 
   actualSaturn() {
-    let age = ((this.actual/29.457) - this.planetSaturn());
+    let age = (remainingAge() / 29.457);
     return parseFloat(age.toFixed(2));
   }
 
   actualUranus() {
-    let age = ((this.actual/84.078) - this.planetUranus());
+    let age = (remainingAge() / 84.078);
     return parseFloat(age.toFixed(2));
   }
 
   actualNeptune() {
-    let age = ((this.actual/164.8) - this.planetNeptune());
+    let age = (remainingAge() / 164.8);
     return parseFloat(age.toFixed(2));
   }
 
   actualPluto() {
-    let age = ((this.actual/248.11) - this.planetPluto());
+    let age = (remainingAge() / 248.11);
     return parseFloat(age.toFixed(2));
   }
 
