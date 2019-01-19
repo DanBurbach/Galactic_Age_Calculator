@@ -72,43 +72,46 @@ class PlanetCalc {
   }
 
   actualMars() {
-    let age = (this.lifeActual()/1.88) - this.planetMars());
+    let age = ((this.actual/1.88) - this.planetMars());
     return parseFloat(age.toFixed(2));
   }
 
   actualJupiter() {
-    let age = (this.lifeActual()/11.86) - this.planetJupiter());
+    let age = ((this.actual/11.86) - this.planetJupiter());
     return parseFloat(age.toFixed(2));
   }
 
   actualSaturn() {
-    let age = (this.lifeActual()/29.457) - this.planetSaturn());
+    let age = ((this.actual/29.457) - this.planetSaturn());
     return parseFloat(age.toFixed(2));
   }
 
   actualUranus() {
-    let age = (this.lifeActual()/84.078) - this.planetUranus());
+    let age = ((this.actual/84.078) - this.planetUranus());
     return parseFloat(age.toFixed(2));
   }
 
   actualNeptune() {
-    let age = (this.lifeActual()/164.8) - this.planetNeptune());
+    let age = ((this.actual/164.8) - this.planetNeptune());
     return parseFloat(age.toFixed(2));
   }
 
   actualPluto() {
-    let age = (this.lifeActual()/248.11) - this.planetPluto());
+    let age = ((this.actual/248.11) - this.planetPluto());
     return parseFloat(age.toFixed(2));
   }
 
+// estimated age left
   lifeExpectancy() {
     return this.estimated;
   }
 
+// actual amount of years remaining
   lifeActual() {
     return this.actual;
   }
 
+// remaining age of the user
   remainingAge() {
     return Math.abs(this.lifeActual() - this.planetEarth());
   }
