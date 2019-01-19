@@ -100,7 +100,7 @@ describe('Planet age', function() {
   });
 
   it('should return how many planet years a person has left on Jupiter', function(){
-    expect(astronaut.actualJupiter()).toEqual(1);
+    expect(astronaut.actualJupiter()).toEqual(0.67);
   });
 
   it('should return how many planet years a person has left on Saturn', function(){
