@@ -77,7 +77,7 @@ This program takes a numeric input of the age of a user. This returns the age th
 - [x] ** Expect: ** actualPluto(36) === "0.03";
 
 ## Setup/Installation Requirements
-1. git clone: https://github.com/DanBurbach/Word_Definer_Test.git
+1. git clone: https://github.com/DanBurbach/Galactic_Age_Calculator.git
 
 2. Navigate into this repo and download dependencies using manager of your choice: npm install
 
